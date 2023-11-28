@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('../images/image1.jpg'); /* Make sure the path to your background image is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the start */
+    min-height: 100vh;
+}
+
+header {
+    margin-bottom: 40px;
+    margin-top: 0; /* Reduce top margin */
+}
+
+header h1 {
+    font-size: 400%; /* Significantly increase the size of 'Fancy Title' */
+    margin-top: 0; /* Align title closer to the top of the page */
+    font-family: 'Playfair Display', serif;
+    font-size: 400%; /* or your desired size */
+    margin-top: 0; /* Align title closer to the top of the page */
+}
+
+header p {
+    font-size: 200%; /* Increase the size of 'Your Name' */
+    margin-top: -20px; /* Adjust space between title and name */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; /* Adjust space between header and nav */
+}
+
+nav ul li {
+    position: relative;
+    width: 400px; /* Increase width of buttons */
+    margin: 20px 0; /* Increase space between buttons */
+}
+
+nav ul li a {
+    font-size: 200%; /* Increase font size within the buttons */
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px 40px; /* Increase padding for larger buttons */
+    background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px) scale(1.1); /* Increase the scale for pop effect */
+}
+
+nav ul li:nth-child(odd) {
+    align-self: flex-end; /* Align to the right */
+    margin-right: 10%; /* Adjust the zig-zag pattern */
+}
+
+nav ul li:nth-child(even) {
+    align-self: flex-start; /* Align to the left */
+    margin-left: 10%; /* Adjust the zig-zag pattern */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.signature {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.signature .tm {
+    font-size: 0.5em;
+    vertical-align: super;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 2px;
+    position: relative;
+    top: -5px;
+    left: 2px;
+    line-height: 0;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+.contact a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #0056b3;
+}

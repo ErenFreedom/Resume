@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/image8.jpg'); /* Make sure the path is correct */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff; /* White text for better visibility */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ff8cfa; /* A vibrant pink color similar to the highlights in the background */
+}
+
+.project-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for the stack items */
+    border: 2px solid #ff8cfa; /* Vibrant pink border */
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 600px; /* Adjust size as needed */
+    cursor: pointer; /* Indicates the element is clickable */
+    position: relative;
+    transition: all 0.3s ease;
+    color: #ffffff; /* White text color for readability */
+}
+
+.project h2 {
+    color: #ff8cfa; /* A vibrant pink color similar to the highlights in the background */
+}
+
+.project:hover {
+    background-color: rgba(255, 140, 250, 0.7); /* A lighter pink color for hover */
+    transform: translateY(-5px); /* Slight move upwards on hover */
+}
+
+.project-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for dropdown */
+    border-top: 1px solid #ff8cfa; /* Vibrant pink border top */
+    padding: 0 20px;
+    color: #333; /* Dark text for the dropdown content */
+}
+
+.project-info.show {
+    max-height: 1000px; /* Enough height to show the content */
+    padding: 20px; /* Padding when content is shown */
+}
+
+footer {
+    margin-top: 20px;
+    color: #ffffff; /* Footer text color for better visibility */
+}
+
+/* ... existing styles ... */
+
+.home-button-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px; /* Space from the content above */
+}
+
+.home-button {
+    padding: 10px 20px;
+    background-color: #64d8cb; /* Teal background */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border-radius: 25px; /* Rounded corners */
+    border: 2px solid #ffffff; /* White border for contrast */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* To apply padding and centering */
+}
+
+.home-button:hover {
+    background-color: #58c1b2; /* Slightly darker teal on hover */
+    border-color: #58c1b2; /* Matching border color on hover */
+    transform: scale(1.05); /* Slight increase in size on hover 
+/* ... existing styles ... */
+}

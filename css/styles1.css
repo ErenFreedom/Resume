@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/image3.jpg'); /* Make sure this path is correct */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff; /* White text for better visibility */
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #ffffff; /* White text for the header */
+}
+
+.introduction {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    width: 60%;
+    height: 65vh;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    /* Removed justify-content to start content from the top */
+}
+
+.introduction h2 {
+    color: #a8dadc; /* Light blue color for headings, for better visibility */
+}
+
+.introduction p {
+    color: #d1e8e2; /* Light grey color for paragraph text */
+    font-size: 1.1em; /* Slightly larger font size for the paragraph */
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    color: #ffffff; /* White text for the footer */
+    position: fixed; /* Footer is fixed to the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0; /* Padding added to footer */
+}
+
+.signature {
+    font-family: 'Brush Script MT', cursive; /* Change to available script-like fonts if necessary */
+    font-size: 1.5em;
+    color: #ffffff; /* White color for the signature */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); /* Center the signature */
+    margin: 0; /* Reset margin for signature */
+}
+
+.home-button {
+    background-color: #4e89ae; /* A professional blue color */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px; /* Smaller padding */
+    font-size: 1em; /* Suitable font size */
+    cursor: pointer; /* Cursor indicates it's clickable */
+    text-decoration: none; /* No underline for text */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .home-button:hover {
+    background-color: #2b6777; /* A darker blue on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+  }
+  
+  /* Positioning the button */
+  footer {
+    position: relative; /* Relative to place children absolutely within */
+  }
+  
+  .home-button-container {
+    position: absolute;
+    bottom: 20px; /* Space from bottom */
+    left: 50%; /* Start from the middle */
+    transform: translateX(-50%); /* Center the button */
+  }
+/* Removed .contact a styles */

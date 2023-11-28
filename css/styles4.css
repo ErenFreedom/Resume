@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/image15.jpg'); /* Update with the correct path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #2a3d45; /* Dark blue-grey color for text */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #2a3d45; /* Dark blue-grey color for the header for better visibility */
+}
+
+.activity-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the start of the flex-container */
+}
+
+.activity {
+    background: linear-gradient(145deg, #cfd9df, #e2ebf0); /* Simulated metallic gradient */
+    border-radius: 50px;
+    width: 50%; /* Half the screen size */
+    height: 150px; /* Increased height */
+    margin: 20px auto; /* Centered margin */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+}
+
+/* ... existing styles ... */
+
+.activity:nth-child(even) {
+    align-self: flex-end; /* Align to the end for even children */
+    margin-right: 10%; /* Adjust the margin to maintain the zig-zag pattern */
+}
+
+.activity:nth-child(odd) {
+    align-self: flex-start; /* Align to the start for odd children */
+    margin-left: 10%; /* Adjust the margin to maintain the zig-zag pattern */
+}
+
+.activity p {
+    color: #204969; /* Dark text color for readability on metallic background */
+    font-size: 1.2em; /* Larger font size for better readability */
+}
+
+.activity:hover {
+    transform: scale(1.05); /* The activity pops out on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow on hover */
+}
+
+footer {
+    margin-top: 20px;
+    color: #2a3d45; /* Dark blue-grey color for the footer text */
+}
+
+/* ... existing styles ... */
+
+.home-button-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px; /* Space from the content above */
+}
+
+.home-button {
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #4a6785, #34515e); /* Metallic blue gradient */
+    color: #e6f7ff; /* Light blue text for contrast */
+    text-decoration: none;
+    border-radius: 25px; /* Rounded corners */
+    border: 2px solid #e6f7ff; /* Light blue border for contrast */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* To apply padding and centering */
+}
+
+.home-button:hover {
+    background: linear-gradient(145deg, #34515e, #4a6785); /* Inverted gradient on hover for effect */
+    color: #ffffff; /* White text on hover for more contrast */
+    transform: scale(1.05); /* Slight increase in size on hover */
+}
+
+/* ... existing styles ... */
+
